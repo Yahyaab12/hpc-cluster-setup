@@ -13,11 +13,10 @@ This documentation outlines the steps to set up a High-Performance Computing (HP
 ## SMS Configuration
 
 ### Hostname and IP Configuration
-
 ```plaintext
 Hostname: sms-host
 IP (private/internal): 10.10.10.10/24
 IP (public): NAT
-
+```
 ### Add sms hostname and ip to /etc/hosts 
-(images/1.png)
+![Description](images/command_example.png)
