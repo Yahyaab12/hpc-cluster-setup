@@ -23,8 +23,10 @@ IP (public): NAT
 ### Add sms hostname and ip to /etc/hosts 
 ![Description](images/1.png)
 
-### Disabling SELINUXTYPE
-```plaintext
-You don't necessarily have to disable SELinuxType to use OpenHPC, but there might be compatibility challenges. OpenHPC applications might require access to system resources or use system calls in a way that conflicts with SELinux's default security policies. These conflicts can manifest as permission errors or unexpected behavior when running OpenHPC workloads.
-```
-![Description](images/2.png)
+### Disabling Firewall
+![Description](images/3.png)
+
+### Enable OpenHPC Components
+![Description](images/4.png)
+
+![Description](images/5.png)
