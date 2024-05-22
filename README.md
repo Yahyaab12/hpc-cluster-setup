@@ -19,4 +19,4 @@ IP (private/internal): 10.10.10.10/24
 IP (public): NAT
 ```
 ### Add sms hostname and ip to /etc/hosts 
-![Description](images/command_example.png)
+![Description](images/1.png)
