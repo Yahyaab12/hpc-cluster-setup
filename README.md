@@ -26,7 +26,11 @@ IP (public): NAT
 ### Disabling Firewall
 ![Description](images/3.png)
 
-### Enable OpenHPC Components
-![Description](images/4.png)
+## Enable OpenHPC Components
 
+### Installing the ohpc repository
+![Description](images/4.png)
+### Installing the epel repository
 ![Description](images/5.png)
+### Installing the xCAT repository
+![Description](images/7.png)
