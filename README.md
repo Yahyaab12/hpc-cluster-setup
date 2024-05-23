@@ -19,7 +19,7 @@ IP (private/internal): 10.10.10.10/24
 IP (public): NAT
 ```
 #### The file setenv.c contains the variables for the env 
- 
+
 ## Prepare SMS Host Parameters
 
 ### Add sms hostname and ip to /etc/hosts 
@@ -66,3 +66,9 @@ IP (public): NAT
 #### State=UNKNOWN:  This shows the current state of the compute nodes as reported by Slurm. In this case, "UNKNOWN" suggests that Slurm hasn't been able to communicate with the nodes or determine their status yet.
 
 #### In this virtual lab, there are only two compute nodes that will be used. The names of the compute nodes are compute00 and compute01. Each compute node has 1 socket, 2 cores per socket, and 1 thread per core.
+![Description](images/16.png)
+
+## Define compute image for provisioning
+
+#### copycds is used to copy the contents of Distribution CDs/DVDs or Service Pack CDs/DVDs to a specific directory on the xCAT cluster's head node.
+![Description](images/17.png)
