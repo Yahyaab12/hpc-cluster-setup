@@ -17,7 +17,9 @@ This documentation outlines the steps to set up a High-Performance Computing (HP
 Hostname: sms-host
 IP (private/internal): 10.10.10.10/24
 IP (public): NAT
-``` 
+```
+#### The file setenv.c contains the variables for the env 
+ 
 ## Prepare SMS Host Parameters
 
 ### Add sms hostname and ip to /etc/hosts 
@@ -39,3 +41,28 @@ IP (public): NAT
 ![Description](images/6.png)
 ### Installing xCAT provisioning system
 ![Description](images/9.png)
+### Enabling xcat tools for use in current shell
+![Description](images/10.png)
+### Enabling support for local provisioning using a private interface and register this network interface with xCAT
+![Description](images/11.png)
+![Description](images/12.png)
+
+## Add resource management services on master node
+
+### Installing SLURM server meta-package
+![Description](images/13.png)
+### Identify resource manager hostname on master host
+![Description](images/14.png)
+
+## Resource Management Slurm
+
+### nano /etc/slurm/slurm.conf
+![Description](images/15.png)
+#### The line defines a set of compute nodes that will be managed by Slurm, the workload manager.
+#### NodeName=c[1-4]: This specifies the names of the compute nodes that this entry applies to. The c[1-4] part uses a wildcard pattern to match nodes named c1, c2, c3, and c4.
+#### Sockets=2: This indicates that each compute node has 2 CPU sockets.
+#### CoresPerSocket=8: This indicates that each CPU socket on the compute nodes has 8 cores.
+#### ThreadsPerCore=2: This defines the number of hardware threads per CPU core on the nodes. In this case, it's set to 2, which means hyper-threading is enabled.
+#### State=UNKNOWN:  This shows the current state of the compute nodes as reported by Slurm. In this case, "UNKNOWN" suggests that Slurm hasn't been able to communicate with the nodes or determine their status yet.
+
+#### In this virtual lab, there are only two compute nodes that will be used. The names of the compute nodes are compute00 and compute01. Each compute node has 1 socket, 2 cores per socket, and 1 thread per core.
