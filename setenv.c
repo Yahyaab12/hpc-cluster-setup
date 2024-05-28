@@ -35,10 +35,9 @@ c_name[2]=compute02
 ###################################################################
 compute_regex=compute*
 compute_prefix=compute
-iso_path=/vagrant
 synclist=""
-
 ###################################################################
 # optional extras
 nagios_web_password=nagiospw
 ###################################################################
+CHROOT=/install/netboot/centos7.7/x86_64/compute/rooting
