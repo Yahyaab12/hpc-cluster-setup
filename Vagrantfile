@@ -92,9 +92,8 @@ Vagrant.configure("2") do |config|
   # documentation for more information about their specific syntax and use.
 
   # more tips: https://www.vagrantup.com/docs/provisioning/shell.html "heredoc"
- config.vm.provision "shell" do |s|
-	s.inline = "sudo yum install vim git tmux screen -y"
-  end
+  config.vm.provision "shell", path: "provision.sh"
+
 
 
 end
